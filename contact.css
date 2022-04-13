@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+ul li{
+    
+    list-style: none;
+    display: inline-block;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+ul a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    
+}
+ul li:hover{
+    transform: translateY(-10px);
+    transition: all 0.25s ease-in-out;
+}
+body{
+    
+}
+form{
+    
+    margin: auto;
+    width: 30%;
+    margin-top: 5%;
+    padding: 20px;
+    background: linear-gradient( to left, #fcced5 , #f8a778);
+    box-shadow:0px 0px 8px 5px #888888;;
+}
+textarea{
+    resize: none;
+    margin-left:50px;
+    margin-top: 10px;
+    width: 65%;
+}
+input{
+font-family: "Roboto Slab", sans-serif;
+width: 50%;
+height: 25px;
+margin-left: 50px;
+margin-top: 15px;
+
+}
+.head{
+width: 450px;
+height: 450px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 40px;
+border-radius: 8px;
+align-content: center;
+box-shadow:0 0 15px 2px black;
+background-color: rgb(209, 207, 207);
+border: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+h2{
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+
+}
+h1{
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: underline;
+    
+}
+.btn{
+    width: 100px;
+    height: 25px;
+    background-color: #1e7a21;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.btn:hover{
+    background-color: #0a550d;
+    cursor: pointer;
+    
+
+}
+#status{
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: bolder;
+    color: white;
+
+}
+#status.success{
+    background-color: greenyellow;
+    animation: status 4s ease forwards;
+}
+#status.error{
+    background-color: rgb(207, 54, 54);
+    animation: status 4s ease forwards;
+}
+@keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
